@@ -1,13 +1,15 @@
 import React from "react";
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <h2>Random Quote</h2>
-      </div>
-    );
-  }
-}
+import QuoteBox from "../components/QuoteBox";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+const App = () => (
+  <div className="App">
+    <Header />
+    <QuoteBox />
+    <Footer />
+  </div>
+);
 
 export default App;
